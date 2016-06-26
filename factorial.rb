@@ -6,4 +6,4 @@ def factorial(n)
   end
 end
 
-factorial(3)
+print factorial(5)
