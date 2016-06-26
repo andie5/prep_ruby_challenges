@@ -1,5 +1,4 @@
-# Two arrays of strings and returns an array with all of the combinations of the items in
-# them, listing the first items first.
+# Takes in a number and returns true if it is a prime number.
 def is_prime?(n)
   i = 2
 
