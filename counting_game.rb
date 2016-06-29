@@ -1,11 +1,5 @@
 # # Check where we are in the group of friends
 def check_pos(player)
-  # if (player>9)
-  #   return player-9-1
-  # elsif (player<0)
-  #   return player+9+1
-  # else return player
-  # end
   if (player>10)
     return player - 10
   elsif (player<1)
@@ -25,7 +19,7 @@ def counting_game
     if((((i+1) % 7) === 0) && (((i+1) % 11) === 0))
       whos_turn = check_pos(whos_turn)
       player_number[i] = whos_turn
-      whos_turn-=2
+      whos_turn+=1
     elsif((i+1) % 7 === 0)
       whos_turn = check_pos(whos_turn)
       player_number[i] = whos_turn
@@ -41,8 +35,6 @@ def counting_game
       player_number[i] = whos_turn
       whos_turn+=1
     end
-
-
   }
 # Print the array
   player_number.each_with_index {|person, i|
